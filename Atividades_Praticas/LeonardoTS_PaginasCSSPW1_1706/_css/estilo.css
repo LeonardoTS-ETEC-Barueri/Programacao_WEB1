@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+/* Base da página */
+body{
+    background-color: #E9E9E5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+body a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s
+}
+body a:hover{
+    color: blue;
+}
+
+div.interface{
+    position: relative;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0px auto;
+
+    width: 1280px;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    background-color: #DDE7DFD5; 
+}
+
+/* Cabeçalho */
+
+div.cabecalho{
+    position: relative;
+}
+
+div.cabecalho .imgMateria{
+    /*background: url('../_imagens/Escola.png');*/
+    display: block;
+    width: 1200px;
+    height: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto;
+}
+
+div.cabecalho nav ul{
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+    position: absolute;
+    right: 5%;
+    bottom: -16px; 
+}
+div.cabecalho nav ul li{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: rgba(238, 238, 238, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+div.cabecalho nav ul li:hover{
+    background-color: rgba(153, 184, 152, 0.5);
+    box-shadow: -2px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteúdo Cental */
+
+div.conteudo{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+
+    padding: 20px 20px;
+    box-sizing: border-box;
+
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+/* Caixas de Comentários e Conteúdo Central */
+
+/* Caixa Esquerda */
+div.conteudo div.comentario_01{
+    border: 1px dashed black;
+    border-radius: 10%;
+
+    position: relative;
+    width: 325px;
+    height: 325px;
+    margin: 30px auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+
+    box-shadow: 0px 0px 10px #4cd3c2;
+}
+
+/* Imagens */
+.conteudo div.imagens img{
+    margin: 20px 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: box-shadow, 0.5s;
+}
+.imagens img:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Caixa Direita */
+div.conteudo div.comentario_02{
+    border: 1px dashed black;
+    border-radius: 10%;
+
+    position: relative;
+    width: 325px;
+    height: 325px;
+    margin: 30px auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+
+    box-shadow: 0px 0px 10px #4cd3c2;
+}
+
+/* Interior das Caixas de Comentários */
+.blocoEsquerdo{
+    display: block;
+    float: left;
+
+    padding: 5px 0px 0px 5px;
+    margin: 0px;
+    box-sizing: border-box;
+    height: 325px;
+}
+.userImg{
+    display: block;
+    width: 100px;
+    height: 100px;   
+}
+.userImg img{
+    border-radius: 50%;
+}
+.userData{
+    display: block;
+    width: 105px;
+    height: 210px;
+
+    max-width: 105px;
+    max-height: 210px;
+
+    margin-top: 5px;
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    overflow: auto;
+    overflow-wrap: break-word;
+
+    text-align: center;
+}
+.userComment{
+    display: block;
+    width: 205px;
+    height: 315px;
+
+    max-width: 205px;
+    max-height: 315px;
+
+    margin-right: 5px;
+    margin-top: 5px;
+
+    float: right;
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+.userComment h3{
+    text-align: center;
+}
+.userComment p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* Configuração do Rodapé */
+
+div.rodape{
+    overflow: auto;
+    position: absolute;
+    bottom: 5px;
+
+    width: 100%;
+    
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.ftrSocials{
+    float: left;
+
+    text-align: center;
+}
+.ftrSocials p{
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ftrCopyright{
+    float: right;
+    transform: translateY(100%);
+}
+.ftrCopyright p{
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*--------------------------------------------------------------*/

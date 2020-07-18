@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo_recovery.css"/>
+        <title>Recuperação da conta Kad'Astra</title>
+        
+    </head>
+    <body>
+        
+        <!-- Início Interface -->
+        <div id="interface" class="telaRecovery">
+            <hgroup id="titulos">
+                <h1>Recupere minha conta</h1>
+                <h2>Digite o e-mail informado no cadastro da sua conta</h2>
+            </hgroup>
+
+            <form id="tFormRecovery" class="formRecovery" action="recuperacaocompleta.html" method="POST">
+                <label for="tRecMail">E-mail de Recuperação</label>
+                <input type="email" class="caixa" id="tRecMail" name="nRecMail" placeholder="Digite seu e-mail" required/>
+                <label for="tBtnRecovery">Resgatar Conta</label>
+                <input type="submit" class="btnRecovery" id="tBtnRecovery" name="nBtnRecovery" value="Resgatar conta"/>
+            </form>
+
+            <!--<img alt="Imagem de recuperação da conta" style="background-image: url('') no-repeat;"/>--> <!-- imagem como BG CSS -->
+            <div class="imgRecovery">
+            </div>
+
+            <a href="index.html">Clique aqui para voltar</a>
+        </div>
+        <!-- Fim Interface -->
+
+        <footer id="rodape">
+            <div id="ftrSocials">
+                <p>Acesse nossas redes sociais :)</p>
+                <a href="https://www.twitter.com/"><img src="_imagens/twitterOk.png" alt="Twitter" title="Siga-nos no Twitter!" /></a> <!--Logo de uma das redes.-->
+                <a href="https://www.instagram.com/"><img src="_imagens/instagramOk.png" alt="Instagram" title="Siga-nos no Instagram!" /></a>
+                <a href="https://www.facebook.com/"><img src="_imagens/facebookOk.png" alt="Facebook" title="Acesse a página do Facebook!" /></a>
+            </div>
+            <div id="ftrCopyright">
+                <p>Site desenvolvido por Leonardo Takanobu Sanehira</p>
+            </div>
+        </footer>
+    </body>
+</html>

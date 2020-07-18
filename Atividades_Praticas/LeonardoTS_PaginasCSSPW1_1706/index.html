@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+    <title>Desenvolvimento de Sistemas - HOME</title>
+
+    <script language="javascript">
+        function mudaImg(img){
+            document.getElementById("imgHome").src=img;
+        }
+    </script>
+</head>
+<body>
+    <div class="interface">
+
+        <div class="cabecalho">
+            <!--<div class="imgMateria"></div>-->
+            <img id="imgHome" class="imgMateria" src="_imagens/Escola.png" alt="Imagem de cabeçalho" title="Escola Técnica"/>
+            <nav>
+                <ul>
+                    <a href="_materias/aps.html" title="Análise e Projeto de Sistemas"><li onmouseover="mudaImg('_imagens/APS.png')" onmouseout="mudaImg('_imagens/Escola.png')">APS</li></a>
+                    <a href="_materias/bd1.html" title="Bancos de Dados I"><li  onmouseover="mudaImg('_imagens/BD.png')" onmouseout="mudaImg('_imagens/Escola.png')">BD1</li></a>
+                    <a href="_materias/dd.html" title="Design Digital"><li  onmouseover="mudaImg('_imagens/DD.png')" onmouseout="mudaImg('_imagens/Escola.png')">DD</li></a>
+                    <a href="_materias/fi.html" title="Fundamentos de Informática"><li onmouseover="mudaImg('_imagens/FI.png')" onmouseout="mudaImg('_imagens/Escola.png')">FI</li></a>
+                    <a href="_materias/ltt.html" title="Linguagem, Trabalho e Técnologia"><li onmouseover="mudaImg('_imagens/LTT.png')" onmouseout="mudaImg('_imagens/Escola.png')">LTT</li></a>
+                    <a href="_materias/pw1.html" title="Programação Web I"><li onmouseover="mudaImg('_imagens/PW1.png')" onmouseout="mudaImg('_imagens/Escola.png')">PW</li></a>
+                    <a href="_materias/pa.html" title="Programação e Algoritmos"><li onmouseover="mudaImg('_imagens/PA.png')" onmouseout="mudaImg('_imagens/Escola.png')">PA</li></a>
+                    <a href="_materias/tp.html" title="Técnicas de Programação"><li onmouseover="mudaImg('_imagens/TP.png')" onmouseout="mudaImg('_imagens/Escola.png')">TP</li></a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="conteudo">
+
+            <div class="comentario_01">
+                <div class="blocoEsquerdo">
+                    <div class="userImg">
+                        <img src="_imagens/User01.png" alt="Imagem de um usuário" title="Foto de usuário"/>
+                    </div>
+                    <div class="userData">
+                        <p><b><u>Jessie Foxie</u><br/><br/>20 anos<br/><br/>Estudante</b></p>
+                    </div>
+                </div>
+
+                <div class="userComment">
+                    <h3>Front-end é divertido!</h3>
+                        <p>Entrei pro curso ainda com dúvidas sobre o que ia enfrentar, não sabia se ia encontrar afinidade com os meus estudos nessa área.</p>
+                        <p>Porém agora estou amando desenvolvimento de sistemas, pretendo me dedicar ao desenvolvimento Front-end!</p>
+                        <p>Se você é criativo, gosta de enfrentar desafios e encontrar soluções. Vem aprender a desenvolver :D</p>
+                        <p>Você vai gostar até do "x-teiga" dos intervalos hahaha!</p>
+                </div>
+            </div>
+
+            <div class="imagens">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="_imagens/Labs.png" alt="Imagem Laboratório" title="Laboratório"/>
+                            <img src="_imagens/Sala01.png" alt="Imagem Sala 01" title="Sala 01"/>
+                            <img src="_imagens/Aula.png" alt="Imagem de um professor dando aula" title="Aula"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="_imagens/Sala02.png" alt="Imagem Sala 02" title="Sala 02"/>
+                            <img src="_imagens/Refeitorio.png" alt="Imagem do Refeitório" title="Refeitório"/>
+                            <img src="_imagens/Anfiteatro.png" alt="Imagem do Anfiteatro" title="Anfiteatro"/>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+
+            <div class="comentario_02">
+
+                <div class="blocoEsquerdo">
+
+                    <div class="userImg">
+                        <img src="_imagens/User02.png" alt="Imagem de um usuário" title="Foto de usuário"/>
+                    </div>
+                        
+                    <div class="userData">
+                        <p><b><u>Vladimir Wolf</u><br/><br/>27 anos<br/><br/>Desenvolvedor Android</b></p>
+                    </div>
+                </div>
+
+                <div class="userComment">
+                        <h3>Melhor escola profissionalizante!</h3>
+                        <p>Agradeço aos docentes por me guiarem através da jornada que é se tornar um Desenvolvedor de Sistemas!</p>
+                        <p>A experiência que tive aqui me deu os fundamentos para alcançar meus objetivos!</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="rodape">
+            <footer>
+                <div class="ftrSocials">
+                    <p>Acesse nossas redes sociais :)</p>
+                    <a href="https://www.twitter.com/"><img src="_imagens/TWITTER.png" alt="Twitter" title="Siga-nos no Twitter!" /></a>
+                    <a href="https://www.instagram.com/"><img src="_imagens/INSTA.png" alt="Instagram" title="Siga-nos no Instagram!" /></a>
+                    <a href="https://www.facebook.com/"><img src="_imagens/FB.png" alt="Facebook" title="Acesse a página do Facebook!" /></a>
+                </div>
+                <div class="ftrCopyright">
+                    <p>Site desenvolvido por Leonardo Takanobu Sanehira</p>
+                </div>
+            </footer>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>

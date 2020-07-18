@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* Página - Cadastro Completo */
+div#interface.telaCadDone {
+    height: 170px;
+    width: 800px;
+}
+
+.telaCadDone hgroup{
+    text-align: center;
+    font-family: Sans-serif;
+    font-size: 80%;
+}
+
+.telaCadDone a{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}

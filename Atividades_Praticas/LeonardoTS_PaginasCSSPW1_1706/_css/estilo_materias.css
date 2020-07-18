@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Padronização _materias/*.html */
+
+/* Base da página */
+body{
+    background-color: #E9E9E5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.interface{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 1280px;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: #D4D6C8; 
+}
+
+/* Cabeçalho */
+div.cabecalho{
+    position: relative;
+    padding: 30px 0 10px;
+}
+figure.figCentro{
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+figure.figCentro img{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+figure.figCentro h1{
+    position: absolute;
+    text-shadow: 2px 2px 4px gray;
+    background-color: rgba(238, 238, 238, 0.8);
+    color: black;
+    padding: 10px 30px;
+    left: 50%;
+    top: -21px;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid black;
+    border-top: none;
+}
+figure.figCentro h3{
+    position: absolute;
+    text-shadow: 2px 2px 4px gray;
+    background-color: rgba(238, 238, 238, 0.8);
+    color: black;
+    padding: 10px;
+    right: 10px;
+    bottom: -19px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+/* Conteúdo Principal */
+div.conteudo{
+    border: 2px solid black;
+    padding: 15px 10px;
+    margin: 0px 36px 10px;
+}
+div.conteudo h3{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+}
+div.conteudo p{
+    text-indent: 25px;
+    text-align: justify;
+}
+div.conteudo li{
+    margin-bottom:2px;
+}
+
+/* Rodapé */
+div.rodape{
+    position: relative;
+    padding: 15px 10px;
+    margin: 0px 36px 10px;
+}
+div.rodape p{
+    display: inline-block;
+    margin: 0 0 0 75%;
+    font-weight: bold;
+}
+div.rodape a{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+/*--------------------------------------------------------------*/

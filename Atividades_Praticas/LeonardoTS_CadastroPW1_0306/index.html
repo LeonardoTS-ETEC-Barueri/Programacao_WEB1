@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <title>Seja bem-vindo(a) a Kad'Astra Online!</title>
+        
+    </head>
+    <body>
+        
+        <!-- Início Interface -->
+        <div id="interface" class="telaLogin">
+            <hgroup id="titulos">
+                <h1>Fazer Log-in</h1>
+                <h2>Use a sua conta Kad'Astra</h2>
+            </hgroup>
+
+            <form class="formLogin" id="tFormLogin" action="" method="POST">
+                <label for="tUser">Nome de Usuário</label>
+                <input type="text" class="caixa" id="tUser" name="nUser" placeholder="Nome de usuário" required/>
+                <label for="tUserPass">Senha</label>
+                <input type="password" class="caixa" id="tUserPass" name="nUserPass" placeholder="Senha" required/>
+                <a id="tPassRecPage" href="recuperacao.html">Esqueci a minha senha.</a>
+                <label for="tBtnLogin">Log-in</label>
+                <input type="submit" class="btnLogin" id="tBtnLogin" name="nBtnLogin" value="Log-in"/>
+            </form>
+
+            <!--<img alt="Logo Kad'Astra" title="Tentando cadastrar você dês de 2020 :D" style="background-image: url('_imagens/_KadAstraFull') no-repeat;"/>--> <!-- Logo como bg CSS-->
+            <div class="imgLogin">
+            </div>
+            
+            <div id="fimForm" class="rodapeForm">
+                <p>Ainda não possui uma conta!?</p>
+                <input type="button" class="btnCriarConta" id="tBtnRegPage" name="nBtnRegPage" value="Criar uma conta" onclick="window.location.href='cadastro.html';"/>
+            </div>
+        </div>
+        <!-- Fim Interface -->
+
+        <footer id="rodape">
+            <div id="ftrSocials">
+                <p>Acesse nossas redes sociais :)</p>
+                <a href="https://www.twitter.com/"><img src="_imagens/twitterOk.png" alt="Twitter" title="Siga-nos no Twitter!" /></a> <!--Logo de uma das redes.-->
+                <a href="https://www.instagram.com/"><img src="_imagens/instagramOk.png" alt="Instagram" title="Siga-nos no Instagram!" /></a>
+                <a href="https://www.facebook.com/"><img src="_imagens/facebookOk.png" alt="Facebook" title="Acesse a página do Facebook!" /></a>
+            </div>
+            <div id="ftrCopyright">
+                <p>Site desenvolvido por Leonardo Takanobu Sanehira</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* Página - Recuperação */
+
+div#interface.telaRecovery {
+    height: 300px;
+    width: 800px;
+}
+
+.telaRecovery hgroup{
+    margin-left: -30%;
+    text-align: center;
+    font-family: Sans-serif;
+    font-size: 70%;
+    margin-top: 65px;
+}
+
+.formRecovery input.caixa{
+    display: block;
+    margin-bottom: 10px;
+    width: 40%;
+    margin-left: 15%;
+}
+.formRecovery input.btnRecovery{
+    display: block;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+.formRecovery label{
+    display: none;
+}
+
+.telaRecovery a{
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 10%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    /* Img Recovery */
+    div.imgRecovery{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background: #000000 url('../_imagens/_ImgRecoveryOk.png') no-repeat;
+        background-size: 100%;
+        left: 65%;
+        top: 10%;
+    }

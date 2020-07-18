@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* Página - Cadastro */
+
+div#interface.telaCadastro {
+    height: 490px;
+    width: 650px;
+}
+
+.formCadastro fieldset legend{
+    font-weight: bold;
+}
+
+.formCadastro div.mainLabelBox{ /*configuração labels*/
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    top: 21.6%;   /*espaço do topo do form até o início dos labels*/
+}
+.formCadastro .mainLabelBox label{
+    display:block;
+    font-weight: bold;
+}
+.formCadastro .mainLabelBox label.lblNome{
+    padding-bottom: 24px;
+}
+.formCadastro .mainLabelBox label.lblMail{
+    padding-bottom: 24px;
+}
+.formCadastro .mainLabelBox label.lblCPF{
+    padding-bottom: 22px;
+}
+.formCadastro .mainLabelBox label.lblRG{
+    padding-bottom: 20px;
+}
+.formCadastro .mainLabelBox label.lblEnd{
+    padding-bottom: 2px;
+}
+.formCadastro label.lblUserName{
+    margin-left: 18%;
+    font-weight: bold;
+}
+.formCadastro label.lblPass{
+    margin-left: 9.5%;
+    font-weight: bold;
+}
+.formCadastro label.lblTerms{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -4.7%;
+}
+.formCadastro label.noLabel{
+    display:none;
+}
+
+.formCadastro input.caixa{ /*base caixas de entrada*/
+    display: block;
+    margin-bottom: 20px;
+    width: 46%;
+    margin-left: 15%;
+}
+.formCadastro input.caixaNome{
+    display: inline-block;
+    width: 22%;
+    margin-top: 18px;       /*Espaço do topo do form até a primeira caixa.*/
+}
+.formCadastro input.caixaLogr{
+    display: inline-block;
+    width: 77%;
+}
+.formCadastro input.caixaCEP{
+    display: inline-block;
+    width: 11%;
+}
+.formCadastro input.caixaNum{
+    display: inline-block;
+    margin-left: 0;
+    width: 8%;
+}
+.formCadastro input.caixaBairro{
+    display: inline-block;
+    margin-left: 0;
+    width: 22%;
+}
+.formCadastro input.caixaCid{
+    display: inline-block;
+    margin-left: 0;
+    width: 20%;
+}
+.formCadastro input.caixaEst{
+    display: inline-block;
+    margin-left: 0;
+    width: 47px;
+}
+.formCadastro input.caixaUserName{
+    display: block;
+    margin-top: 5px;
+    margin-left: 105px;
+    width: 20%;
+}
+.formCadastro input.caixaPass{
+    display: block;
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -21px;
+    width: 20%;
+}
+.formCadastro input.caixaTerms{
+    display: block;
+    margin-left: 18%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.formCadastro input.btnCadastrar{   /*Início dos botões*/
+    display: inline-block;
+    /*position: absolute;*/
+    margin-left: 22.5%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+.formCadastro input.btnLimpar{
+    /*position: absolute;*/
+    margin-left: 17%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.telaCadastro a{
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 0%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    /* Imgs Cadastro */
+    div.imgLogoCadastro{
+        /*position: absolute;*/
+        width: 200px;
+        height: 55px;
+        border-radius: 10px;
+        background: #000000 url('../_imagens/_KadAstraTextOk.png') no-repeat;
+        background-size: 100%;
+        margin-left: 2%;
+    }
+
+    div.imgCadastro{
+        position: absolute;
+        height: 170px;
+        width: 170px;
+        border-radius: 10px;
+        background: #000000 url('../_imagens/_ImgCadastroOk.png')  no-repeat;
+        opacity: 0.2;
+        background-size: 100%;
+        left: 65%;
+        top: 12%;
+        z-index: -1;
+    }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo_cadastro.css"/>
+        <title>Registro Kad'Astra</title>
+
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>--> <!--Declaração C'ontent D'istribution N'etwork-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--CDN-->
+    </head>
+    <body>
+        
+        <!-- Início Interface -->
+        <div id="interface" class="telaCadastro">
+
+            <!--<img alt="Imagem de Criação da Conta" style="background-image: url('') no-repeat;"/>--> <!-- Imagem como BG CSS -->
+            <div class="imgCadastro">
+            </div>
+            <form id="tFormLogin" class="formCadastro" action="cadastrocompleto.html" method="POST">
+                <fieldset><legend>Registro de Usuário Kad'Astra</legend>
+
+                    <!--<img alt="Logo em Texto da Kad'Astra" style="background-image: url('') no-repeat;"/>--> <!-- Imagem como BG CSS -->
+                    <div class="imgLogoCadastro">
+                    </div>
+                    
+                    <div class="mainLabelBox">
+                        <label for="tRegPriNome" class="lblNome">Nome</label>
+                        <label for="tRegMail" class="lblMail">E-mail</label>
+                        <label for="tRegCPF" class="lblCPF">CPF/CNPJ</label>
+                        <label for="tRegRG" class="lblRG">RG</label>
+                        <label for="tRegLogr" class="lblEnd">Endereço</label>
+                    </div>
+                    
+                    <input type="text" id="tRegPriNome" name="nRegPriNome" class="caixa caixaNome" placeholder="Nome" required/>
+                    <input type="text" id="tRegSobrenome" name="nRegSobrenome" class="caixaNome" placeholder="Sobrenome" required/>
+                    
+                    <input type="email" id="tRegMail" name="nRegMail" class="caixa" placeholder="meu_email@provedor.com" required/>
+                    
+                    <input type="text" id="tRegCPF" name="nRegCPF" class="cpfOuCnpj caixa" placeholder="123.123.123-12" minlength="12" maxlength="14" required/>
+                    
+                    <input type="text" id="tRegRG" name="nRegRG" class="mascaraRG caixa" placeholder="12.123.123-1" minlength="9" required/>
+                   
+                    <input type="text" id="tRegLogr" name="nRegLogr" class="caixa caixaLogr" placeholder="Logradouro"/>
+                    <input type="text" id="tRegCEP" name="nRegCEP" class="mascaraCEP caixa caixaCEP" placeholder="CEP" minlength="8" required/>
+                    <input type="text" id="tRegNum" name="nRegNum" class="caixa caixaNum" placeholder="Número" required/>
+                    <input type="text" id="tRegBairro" name="nRegBairro" class="caixa caixaBairro" placeholder="Bairro"/>
+                    <input type="text" id="tRegCid" name="nRegCid" class="caixa caixaCid" placeholder="Cidade"/>
+                    <input type="text" id="tRegEst" name="nRegEst" class="caixa caixaEst" placeholder="Estado"/>
+
+                    <label for="tRegUser" class="lblUserName">Nome de Usuário</label>
+                    <label for="tRegPass" class="lblPass">Senha</label>
+                    <input type="text" id="tRegUser" name="nRegUser" class="caixaUserName" placeholder="Nome de Login" required/>
+                    <input type="password" id="tRegPass" name="nRegPass" class="caixaPass" placeholder="Senha" required/>
+
+                    <input type="checkbox" id="tRegTerms" name="tRegTerms" class="caixaTerms" required/><label for="tRegTerms" class="lblTerms">Eu concordo com os termos de uso.</label>
+
+                    <label for="tBtnCadastrar" class="noLabel">Cadastrar</label>
+                    <input type="submit" id="tBtnCadastrar" name="nBtnCadastrar" class="btnCadastrar" value="Cadastrar"/>
+
+                    <label for="tBtnLimpar" class="noLabel">Limpar</label>
+                    <input type="reset" id="tBtnCadastrar" name="nBtnCadastrar" class="btnLimpar" value="Limpar"/>
+
+                    <a href="index.html">Clique aqui para voltar</a>
+                </fieldset>
+            </form>
+        </div>
+        <!-- Fim Interface -->
+
+        <footer id="rodape">
+            <div id="ftrSocials">
+                <p>Acesse nossas redes sociais :)</p>
+                <a href="https://www.twitter.com/"><img src="_imagens/twitterOk.png" alt="Twitter" title="Siga-nos no Twitter!" /></a> <!--Logo de uma das redes.-->
+                <a href="https://www.instagram.com/"><img src="_imagens/instagramOk.png" alt="Instagram" title="Siga-nos no Instagram!" /></a>
+                <a href="https://www.facebook.com/"><img src="_imagens/facebookOk.png" alt="Facebook" title="Acesse a página do Facebook!" /></a>
+            </div>
+            <div id="ftrCopyright">
+                <p>Site desenvolvido por Leonardo Takanobu Sanehira</p>
+            </div>
+        </footer>
+
+        <!--
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>--> <!--Declaração do script do Plugin-->
+        <!--
+        <script>
+            $(document).ready(function () {
+                $campoCPF = $(".mascaraCPF");
+                $campoCPF.mask('000.000.000-00', {reverse: true});
+             });
+        </script>
+        -->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script> <!--Plugin-->
+        <script>
+            /* Máscara CPF/CNPJ */
+            $(document).ready(function () {
+                var options = {
+                    onKeyPress: function (cpf, ev, el, op) {
+                        var masks = ['000.000.000-000', '00.000.000/0000-00'];
+                        $('.cpfOuCnpj').mask((cpf.length > 14) ? masks[1] : masks[0], op);
+                    }
+                }
+                $('.cpfOuCnpj').length > 11 ? $('.cpfOuCnpj').mask('00.000.000/0000-00', options) : $('.cpfOuCnpj').mask('000.000.000-00#', options);
+
+            /* Máscara RG */
+            $campoCPF = $(".mascaraRG");
+            $campoCPF.mask('00.000.000-0', {reverse: true});
+
+            /* Máscara CEP */
+            $campoCEP = $(".mascaraCEP");
+            $campoCEP.mask('00000-000', {reverse: true});
+            });
+        </script>
+
+
+    </body>
+</html>
